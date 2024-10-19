@@ -1,0 +1,370 @@
+
+
+main{
+    width: 1366px;
+    height: auto;
+}
+
+header{
+    width: 1366px;
+    height: 250px;
+    background-color: #bf8b2e;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+header img{
+    margin-left: 75px;
+    height: 75%;
+}
+@keyframes true{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 110px;
+    }
+}
+header h1 {
+    color: white;
+    font-size: 60px;
+    margin-left: 80px;
+    animation-fill-mode: forwards;
+    font-family: "Montserrat", serif;
+
+    position: relative;
+
+    animation-name: true;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+nav{
+    width: 1366px;
+    height: 55px;
+    background-color: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 17px;
+    font-family: "Raleway", serif;
+    transition: .5s;
+}
+nav a:hover{
+    background-color:rgba(255, 255, 255, 0.164);
+}
+
+section{
+    width: 1366px;
+    height: auto;
+    background-color: #f2ecdd;
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+}
+
+/*------------------caja UNO-----------------*/
+section .caja{
+    width: 1366px;
+    height: auto;
+    padding-top: 50px;
+    position: relative;
+}
+section .titulo{
+    width: 1366px;
+    height: 100px;
+    margin-top: 30px;
+    font-family: "Montserrat", serif;
+}
+.caja .texto {
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    font-family: "Raleway", serif;
+}
+.caja .cont{
+    width: 800px;
+    height: 250px;
+    background-color: #f5cb5c;
+    margin-left: 90px;
+    padding: 30px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+.caja .cont2{
+    width: 600px;
+    height: 120px;
+    background-color: #f5cb5c;
+    padding: 30px;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+.caja .imagen{
+    width: 280px;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+.imagen img{
+    height: 100%;
+}
+.caja .imagenR{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    left: 850px;
+    top: 250px;
+    transition: .5s;
+}
+.imagenR img{
+    margin-top: 50px;
+    width: 100%;
+}
+.caja .imagenR:hover{
+    transform: scale(1.2);
+}
+
+/*--------------------caja DOS---------------------*/
+section .caja2{
+    width: 1276px;
+    height: auto;
+    padding: 40px;
+    background-color: #333533;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    perspective: 800px;
+}
+.caja2 .titulo {
+    width: 1366px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 30px;
+}
+.caja2 .contenedor{
+    perspective: 800px;
+}
+.contenedor:hover > .carta{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.carta{
+    width: 280px;
+    height: 320px;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.frente, .atras{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frente{
+    background-color: white;
+    
+}
+.frente img{
+    margin-top: 25px;
+}
+.atras{ 
+    background-color: white;
+    transform: rotateY(180deg);
+    gap: 5rem;
+}
+.atras h3{
+    margin: 20px;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.atras p{
+    margin: 20px;
+    font-family: "Raleway", serif;
+}
+
+
+/*--------------------caja TRES---------------------*/
+section .caja3{
+    width: 1366px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.caja3 .titulo{
+    width: 1366px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.caja3 .cont{
+    width: 550px;
+    height: 260px;
+
+    margin-left: 90px;
+    margin-bottom: 70px;
+    padding: 30px;
+    display: flex;
+}
+.caja3 .cont2{
+    width: 250px;
+    height: 250px;
+    background-color: #f5cb5c;
+    padding: 30px;
+    border-radius: 25px;
+    position: absolute;
+    left: 750px;
+    top: 200px;
+    font-family: "Raleway", serif;
+}
+.caja3 .texto {
+    width: auto;
+    height: auto;
+    font-family: "Raleway", serif;
+    margin-left: 50px;
+}
+.caja3 .imagen{
+    width: 300px;
+    height: 250px;
+    background-color: cadetblue;
+}
+.caja3 .imagenR{
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 300px;
+    transition: .5s;
+}
+.caja3 .imagenR img{
+    width: 100%;
+    margin-top: 0;
+}
+.caja3 .imagenR:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*---------------------caja CUATRO----------------------*/
+section .caja4{
+    width: 1366px;
+    height: auto;
+    float: left;
+    
+}
+.caja4 .titulo{
+    width: 1366px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    
+}
+.foto{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 5px 2px rgba(192, 154, 154, 0.25);
+    margin-left: 190px;
+    margin-bottom: 30px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.info h2{
+    margin: 0;
+}
+.info{
+    width: 360px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: antiquewhite;
+    padding: 20px;
+    position: absolute;
+    top: 310px;
+    transition: .5s;
+    font-family: "Raleway", serif;
+}
+.info:hover{
+    top: 0;
+}
+
+
+/*------COMENTARIOS------*/
+section .comentarios{
+    width: 1366px;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.comentarios .titulo{
+    width: 1366px;
+    height: auto;
+    text-align: center;
+
+    font-size: 30px;
+}
+.comentarios .cont3{
+    width: 900px;
+    height: auto;
+    display: flex;
+}
+.comentarios .imagenC{
+    width: 70px;
+    height: 70px;
+    margin: 50px;
+    background-color: white;
+}
+.comentarios .textoC{
+    width: 600px;
+    height: 70px;
+    margin: 50px;
+    background-color: white;
+}
+.comentarios .esc{
+    width: 580px;
+    height: 30px;
+    border-radius: 25px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.comentarios .boton{
+    width: 100px;
+    padding: 10px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+footer{
+    width: 1366px;
+    height: 200px;
+    background-color: #22212a;
+    position: absolute;
+    top: 3350px;
+}
+
